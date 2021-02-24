@@ -1,0 +1,59 @@
+.container{
+    text-align: center;
+}
+
+.heading{
+    padding: 20px;
+    font-family: fangsong;
+   
+}
+.search{
+    padding: 20px;
+    font-family: fangsong;
+}
+
+.search p{
+        font-size: 19px;
+}
+
+.search input {
+    width: 40%;
+    height: 25px;
+}
+
+.search button {
+    padding: 5px;
+    width: 10%;
+    height: 25px;
+    border: none;
+    margin: 4px;
+    background-color: aliceblue;
+}
+
+.list{
+    padding: 20px;
+    font-family: fangsong;
+    text-align: -webkit-center;
+
+}
+
+.list .card{
+    width: 30%;
+    text-align: left;
+    padding: 10px;
+    background-color: #dad5d5;
+    border-radius: 2%;
+}
+
+@media screen and (max-width: 600px) {
+    .search button {
+        width: 30%;
+    }
+    .search input {
+        width: 100%;
+    }    
+    .list .card{
+        width: 80%;
+    }
+
+  }

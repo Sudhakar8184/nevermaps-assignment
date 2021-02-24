@@ -1,0 +1,21 @@
+<div class="container">
+<div class="heading">
+<h1>Restuarant Lookup</h1>
+</div>
+<div class="search">
+    <p>Restaurant ID</p>
+<div><input type="text" [(ngModel)]='searchText'/></div>
+<button (click)="search()">search</button>
+</div>
+<div class="list">
+<div class="card" *ngIf="!data.length">
+        <p>No Found Data</p>
+      
+</div>
+<div class="card" *ngFor="let list of data;">
+    <p>{{list.name}}</p>
+    <p>{{list.description}}</p>
+    <p>${{list.amount}}</p>
+</div>
+</div>
+</div>
